@@ -1,0 +1,17 @@
+  <article class="card">
+    <div class="card-img cursor-pointer">
+      <img [src]="image" alt="{{title}}" />
+    </div>
+
+    <div class="card-body">
+      <h3 class="card-title">{{ title }}</h3>
+      <p class="meta"><strong>Type:</strong> {{ type }}</p>
+      <p class="meta"><strong>Min Quantity:</strong> {{ minQuantity }}</p>
+      <p class="meta"><strong>Price:</strong> {{ price }} EGP</p>
+      <p class="meta"><strong>Colors:</strong> {{ colors }}</p>
+      <p class="meta"><strong>Vendor:</strong> {{ vendor }}</p>
+    </div>
+    <div class="card-btns">
+      <button class="btn btn-main btn-gold"> add to cart</button>
+    </div>
+  </article>

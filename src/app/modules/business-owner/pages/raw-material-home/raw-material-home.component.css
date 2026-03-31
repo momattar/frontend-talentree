@@ -1,0 +1,53 @@
+.page {
+  margin: 0 auto;
+  padding: 150px 16px 48px;
+}
+
+
+
+/* Filters */
+.filters {
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.filter-field {
+  display: grid;
+  gap: 6px;
+}
+
+.filter-field label {
+  color: #4b5563;
+}
+
+
+
+
+/* Grid for product cards */
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 14px;
+  width:80%;
+  margin:auto;
+}
+
+
+
+
+/* Responsive tweak for small screens */
+@media (max-width: 640px) {
+  .hero {
+    padding: 16px;
+  }
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}

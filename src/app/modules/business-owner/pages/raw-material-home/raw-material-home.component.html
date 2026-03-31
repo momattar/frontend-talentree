@@ -1,0 +1,48 @@
+<div class="page">
+  <!-- owl carsoul slider -->
+  
+    <div class="row slider">
+      <div class="col-12">
+        <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><img src="../../../../../assets/images/machine-slider1.jpg" class ="w-100" height="500px"alt=""></ng-template>  
+    <ng-template carouselSlide><img src="../../../../../assets/images/clothes-slider2.jpg" class ="w-100" height="500px"alt=""></ng-template>  
+    <ng-template carouselSlide><img src="../../../../../assets/images/ciser-slider3.jpg" class ="w-100" height="500px"alt=""></ng-template>  
+  </owl-carousel-o>
+      </div>
+    </div>
+    
+
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="filter-field">
+      <label for="searchName">Product name</label>
+      <input class="input-main" id="searchName" type="text" placeholder="Search by name..." />
+    </div>
+    <div class="filter-field">
+      <label for="searchVendor">Vendor</label>
+      <input class="input-main" id="searchVendor" type="text" placeholder="Search by vendor..." />
+    </div>
+    <div class="filter-field">
+      <label for="minQty">Min quantity</label>
+      <input class="input-main" id="minQty" type="number" min="0" placeholder="e.g. 100" />
+    </div>
+    <button class="btn-main btn-burgandy">Filter</button>
+  </section>
+
+  <!-- Grid -->
+  <section class="grid">
+    @for (item of items; track $index) {
+    <app-product-card 
+    [image]="item.image" 
+    [title]="item.title"
+    [type]="item.type" 
+    [minQuantity]="item.minQty"
+    [price]="item.price"
+    [colors]="item.colors"
+    [vendor]="item.vendor">
+  </app-product-card>
+    }
+  </section>
+
+</div>

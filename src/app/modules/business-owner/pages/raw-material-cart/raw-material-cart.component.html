@@ -1,0 +1,78 @@
+<div class="cart-layout">
+  <!-- Cart list -->
+  <section class="cart-list">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+            <th class="actions-col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row; replace with *ngFor -->
+          <tr>
+            <td>
+              <div class="item">
+                <img src="https://i.pinimg.com/1200x/f8/ff/a8/f8ffa8318021e19de6f350998f637115.jpg" alt="Organic Soy Wax" />
+                <div>
+                  <div class="name">Organic Soy Wax</div>
+                  <div class="meta">Grade A · Flakes</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="qty">
+                <button aria-label="decrease">-</button>
+                <input type="number" min="1" value="3" />
+                <button aria-label="increase">+</button>
+              </div>
+            </td>
+            <td>$18</td>
+            <td>$54</td>
+            <td class="actions-col">
+              <button class="remove" aria-label="remove">❌ Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Order summary -->
+  <aside class="summary-card">
+    <h2>Order Summary</h2>
+    <div class="line">
+      <span>Subtotal</span><span class="value">$54.00</span>
+    </div>
+    <div class="line">
+      <span>Shipping</span><span class="value">$8.00</span>
+    </div>
+    <div class="line">
+      <span>Taxes</span><span class="value">$0.00</span>
+    </div>
+    <div class="line">
+      <span>Discount</span><span class="value">-$0.00</span>
+    </div>
+
+    <div class="promo">
+      <label for="promo">Promo Code</label>
+      <div class="promo-row">
+        <input id="promo" type="text" placeholder="Enter promo code" />
+        <button class="btn ghost">Apply</button>
+      </div>
+    </div>
+
+    <div class="line total">
+      <span>Grand Total</span><span class="value">$62.00</span>
+    </div>
+
+    <button class="btn primary full">Proceed to Checkout</button>
+    <button class="btn ghost full">Continue Shopping</button>
+  </aside>
+</div>
